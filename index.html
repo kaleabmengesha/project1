@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Home - EaTaco</title>
+        <link rel="icon" href="Resources/taco-head.png">
+        <link rel="stylesheet" href="Home.css">
+
+        
+    </head>
+
+    <body>
+
+        <div id="fix">
+            <img src="Resources/ad.gif" id="fix" title="Ad 2">
+        </div>
+
+        <div id="goup-div">
+            <a href="#"><img src="Resources/upload.png" id="goup" title="Go To Top"></a>
+        </div>
+
+        
+        <div class="container" id="top">
+            
+            <div class="box">
+                <img src="Resources/taco.gif" alt="Taco animation" id="gif" width="140" title="Enjoy Your Taco">
+            </div>
+                
+            <div class="table">
+                <table>
+                    <tr class="expand"><td><b>Tacos Available</b></td></tr>
+                    <tr class="hide"><td><a href="#chicken">Chicken Taco</a></td></tr>
+                    <tr class="hide"><td><a href="#beef">Beef Taco</a></td></tr>
+                    <tr class="hide"><td><a href="#fish">Fish Taco</a></td></tr>
+                    <tr class="hide"><td><a href="#pork">Pork Taco</a></td></tr>
+                    <tr class="hide"><td><a href="#vegetable">Vegetable Taco</a></td></tr>
+                </table>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var expandableRows = document.querySelectorAll('.expand');
+                    var hiddenRows = document.querySelectorAll('.hide');
+            
+                    expandableRows.forEach(function(row) {
+                        row.addEventListener('click', function(event) {
+                            var next = row.nextElementSibling;
+                            while (next && next.classList.contains('hide')) {
+                                next.style.display = (next.style.display === 'table-row' ? 'none' : 'table-row');
+                                next = next.nextElementSibling;
+                            }
+                            event.stopPropagation(); // Prevent the click event from propagating to the document
+                        });
+                    });
+            
+                    document.addEventListener('click', function() {
+                        hiddenRows.forEach(function(hiddenRow) {
+                            hiddenRow.style.display = 'none';
+                        });
+                    });
+                });
+            </script>
+
+            <div class="box" id="ad">
+                <img src="Resources/ad.jpg" alt="ad" id="ad" width="230" title="Ad 1">
+            </div>        
+
+        </div>
+
+
+        <div class="container-2" id="body">
+
+            <div class="container-3" id="top-body">
+
+                <div class="sub" id="home" title="Home">
+
+                </div>
+
+                <div class="sub" id="store-hours" title="Store Hours">
+                    <a href="Store Hours.html"></a>
+                </div>
+
+                
+                <div class="sub" id="reward" title="Rewards">
+                    <a href="Reward.html"></a>
+                </div>
+                
+
+            
+                <div class="sub" id="contact-us" title="Contact Us">
+                    <a href="Contact Us.html"></a>
+                </div>
+            
+
+            </div>
+            
+
+            <div class="main" id="main-body">
+
+                <h1 id="h1">EaTaco</h1>
+                <p id="p"><b>Satisfaction Guaranteed!</b></p><br><br>
+                <img src="Resources/pic1.jpg" alt="taco-1" id="pic1" width="885px">
+                <h2 id="h1">Our menu</h2>
+                <p id="p1"><b>This is our main serving, we can't accept custom orders for now, we will notify you if anything changed.</b></p>
+
+                <ul id="p1">
+                    <li>
+                        <p class="p2" id="chicken"><b>Chicken Taco</b></p><br>
+                    </li>
+                </ul>
+
+                <img src="Resources/chicken.jpg" alt="taco-2" id="pic2" width="885px"><br><br><br>
+                
+                <p id="p3"><b>As the name indicates chicken tacos contain primarily chicken and some veggies just not to unbalance the nutrition you get. Just order and enjoy!</b>
+                
+                    <ul id="p3">
+                        <li>
+                            <p class="p2"><b>Prices: </b></p>
+                        </li>
+                    </ul>
+
+                    <b>
+                        <ol id="p4">
+                            <li><b>Small size: $12.99</b> (Just to try it.)</li>
+                            <li><b>Full size: $18.99</b> (Recommended for your daily diet.)</li>
+                            <li><b>Large size: $30.99</b> (Starving?)</li>
+                        </ol>
+                    </b>
+
+                </p><br><hr><br>
+
+                <ul id="p1">
+                    <li>
+                        <p class="p2" id="beef"><b>Beef Taco</b></p><br>
+                    </li>
+                </ul>
+
+                <img src="Resources/beef.jpg" alt="taco-3" id="pic3" width="885px"><br><br>
+
+                <p id="p3"><b>Here it is your favorite beef taco, anticipating to fill your bellies. <br> This serving is the rich one, simple serving is also available.</b>
+                
+                    <ul id="p3">
+                        <li>
+                            <p class="p2"><b>Prices: </b></p>
+                        </li>
+                    </ul>
+
+                    <b>
+                        <ol id="p4">
+                            <li><b>Small size: $15.99</b> (Check how it tests.)</li>
+                            <li><b>Full size: $21.99</b> (Recommended for your daily diet.)</li>
+                            <li><b>Large size: $37.99</b> (Let's ride it in!)</li>
+                        </ol>
+                    </b>
+
+                </p><br><hr><br>
+
+                <ul id="p1">
+                    <li>
+                        <p class="p2" id="fish"><b>Fish Taco</b></p><br>
+                    </li>
+                </ul>
+
+                <img src="Resources/fish.jpg" alt="taco-4" id="pic4" width="885px"><br><br>
+
+                <p id="p3"><b>Welcome to the shop fish lovers! <br>The famous white fish is served best here. <br>You are forced to enjoy your time with us, what are you waiting for pick one!</b>
+                
+                    <ul id="p3">
+                        <li>
+                            <p class="p2"><b>Prices: </b></p>
+                        </li>
+                    </ul>
+
+                    <b>
+                        <ol id="p4">
+                            <li><b>Small size: $9.99</b> (Try it.)</li>
+                            <li><b>Full size: $14.99</b> (Recommended for your daily diet.)</li>
+                            <li><b>Large size: $19.99</b> (Yummy!)</li>
+                        </ol>
+                    </b>
+
+                </p><br><hr><br>
+
+                <ul id="p1">
+                    <li>
+                        <p class="p2" id="pork"><b>Pork Taco</b></p><br>
+                    </li>
+                </ul>
+
+                <img src="Resources/pork.jpg" alt="taco-5" id="pic5" width="885px"><br><br>
+
+                <p id="p3"><b>The little cutie pig is waiting on the dish.</b>
+                
+                    <ul id="p3">
+                        <li>
+                            <p class="p2"><b>Prices: </b></p>
+                        </li>
+                    </ul>
+
+                    <b>
+                        <ol id="p4">
+                            <li><b>Small size: $7.99</b> (Say Hi!)</li>
+                            <li><b>Full size: $15.99</b> (Recommended for your daily diet.)</li>
+                            <li><b>Large size: $24.99</b> (Blend in!)</li>
+                        </ol>
+                    </b>
+
+                </p><br><hr><br>
+
+                <ul id="p1">
+                    <li>
+                        <p class="p2" id="vegetable"><b>Vegetable Taco</b></p><br>
+                    </li>
+                </ul>
+
+                <img src="Resources/vege.jpg" alt="taco-6" id="pic6" width="885px"><br><br>
+
+                <p id="p3"><b>We never forget the vegeterians.</b>
+                
+                    <ul id="p3">
+                        <li>
+                            <p class="p2"><b>Prices: </b></p>
+                        </li>
+                    </ul>
+
+                    <b>
+                        <ol id="p4">
+                            <li><b>Small size: $1.99</b> (Check if it goes with you.)</li>
+                            <li><b>Full size: $3.99</b> (Recommended for your daily diet.)</li>
+                            <li><b>Large size: $7.99</b> (Having too much veggies is never a harm!)</li>
+                        </ol>
+                    </b>
+
+                </p><br><hr><br><br>
+
+                <div id="bottom">
+                    <br><br><br><br>
+                    <a href="Store Hours.html"><p id="p6">Store Hours</p></a><br>
+                    <a href="Reward.html"><p id="p6">Rewards</p></a><br>
+                    <a href="Contact Us.html"><p id="p6">Contact Us</p></a><br>
+                    <a href="#"><p id="p6">Back to top</p></a>
+                </div>
+                
+
+                <div id="last">
+                <p id="p5"><b>© 2024 All Rights Reserved.</b></p></div>
+
+            </div>
+
+        </div>
+
+
+        
+
+    </body>
+
+   
+
+</html>

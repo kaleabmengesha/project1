@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Store Hours - EaTaco</title>
+        <link rel="icon" href="Resources/hours.webp">
+        <link rel="stylesheet" href="Store Hours.css">
+
+    </head>
+
+    <body>
+        <div class="container" id="top">
+            
+            <div class="box">
+                <img src="Resources/taco.gif" alt="Taco animation" id="gif" width="140" title="Enjoy Your Taco">
+            </div>
+
+            <div class="table">
+                <table>
+                    <tr class="expand"><td><b>Tacos Available</b></td></tr>
+                    <tr class="hide"><td><a href="Home.html#chicken">Chicken Taco</a></td></tr>
+                    <tr class="hide"><td><a href="Home.html#beef">Beef Taco</a></td></tr>
+                    <tr class="hide"><td><a href="Home.html#fish">Fish Taco</a></td></tr>
+                    <tr class="hide"><td><a href="Home.html#pork">Pork Taco</a></td></tr>
+                    <tr class="hide"><td><a href="Home.html#vegetable">Vegetable Taco</a></td></tr>
+                </table>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var expandableRows = document.querySelectorAll('.expand');
+                    var hiddenRows = document.querySelectorAll('.hide');
+            
+                    expandableRows.forEach(function(row) {
+                        row.addEventListener('click', function(event) {
+                            var next = row.nextElementSibling;
+                            while (next && next.classList.contains('hide')) {
+                                next.style.display = (next.style.display === 'table-row' ? 'none' : 'table-row');
+                                next = next.nextElementSibling;
+                            }
+                            event.stopPropagation(); // Prevent the click event from propagating to the document
+                        });
+                    });
+            
+                    document.addEventListener('click', function() {
+                        hiddenRows.forEach(function(hiddenRow) {
+                            hiddenRow.style.display = 'none';
+                        });
+                    });
+                });
+            </script>
+
+            <div class="box" id="ad">
+                <img src="Resources/ad.jpg" alt="ad" id="ad" width="230" title="Ad">
+            </div>        
+
+        </div>
+
+
+        <div class="container-2" id="body">
+
+            <div class="container-3" id="top-body">
+
+                
+                <div class="sub" id="home" title="Home">
+                    <a href="index.html"></a>
+                </div>
+                
+
+                <div class="sub" id="store-hours" title="Store Hours">
+
+                </div>
+
+                
+                <div class="sub" id="reward" title="Rewards">
+                    <a href="Reward.html"></a>
+                </div>
+                
+
+                
+                <div class="sub" id="contact-us" title="Contact Us">
+                    <a href="Contact Us.html"></a>
+                </div>
+                
+
+            </div>
+
+            <div class="main" id="main-body">
+                <h1 id="h1">We are open between: <br></h1>
+                <br><hr><br>
+
+                <div id="page-hrs"><br><br><br><br><br>
+                    <div id="times">
+                        <ul id="p1">
+                            <li>
+                                <p id="p2"><b>Monday: 6:30am - 11:00pm</b></p>
+                            </li>
+                            <li>
+                                <p id="p2"><b>Tuesday: 7:00am - 10:00pm</b></p>
+                            </li>
+                            <li>
+                                <p id="p2"><b>Wednesday: 6:30am - 11:00pm</b></p>
+                            </li>
+                            <li>
+                                <p id="p2"><b>Thursday: 7:30am - 9:30pm</b></p>
+                            </li>
+                            <li>
+                                <p id="p2"><b>Friday: 6:30am - 11:00pm</b></p>
+                            </li>
+                            <li>
+                                <p id="p2"><b>Saturday: 8:00am - 7:00pm</b></p>
+                            </li>
+                        </ul>
+                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><br><br><br>
+
+                    <div id="bottom">
+                        <br><br><br><br>
+                        <a href="Home.html"><p id="p6">Home</p></a><br>
+                        <a href="Reward.html"><p id="p6">Rewards</p></a><br>
+                        <a href="Contact Us.html"><p id="p6">Contact Us</p></a><br>
+                        <a href="#"><p id="p6">Back to top</p></a>
+                    </div>
+                    
+    
+                    <div id="last">
+                    <p id="p5"><b>© 2024 All Rights Reserved.</b></p></div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+    </body>
+
+   
+
+</html>
